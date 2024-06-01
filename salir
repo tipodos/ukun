@@ -1,0 +1,83 @@
+[33mcommit 71e6ffc4b50a1f4d5c70f44905e4945543e0064a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Sat Jun 1 08:58:49 2024 -0500
+
+    Add .env.example to .gitignore
+
+[33mcommit 9d2a65eac37f28b738b2fb87f19151de33b1ca2d[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Sat Jun 1 08:41:37 2024 -0500
+
+    Remove secrets from .env.example
+
+[33mcommit 91659476bd655ee4cde2f596491d554f5b042e23[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 31 12:20:13 2024 -0500
+
+    Add .env.example to .gitignore
+
+[33mcommit 4f27ed7956bdf466e6657dac8096e3ae32378260[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 31 12:16:43 2024 -0500
+
+    asd
+
+[33mcommit 6d15b551cbee522440831631858d59c44b303676[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 31 12:13:18 2024 -0500
+
+    cambio
+
+[33mcommit 112806593cc6f35d65da7d348ddec5b6c12137e0[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 31 12:10:32 2024 -0500
+
+    Agregamos los 3 problemas faltantes
+
+[33mcommit 978ac1100abb304db09695f36e4d749ab4c23152[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 24 11:07:00 2024 -0500
+
+    agrege el pago con paypal
+
+[33mcommit 0d380fd44e6927a87540dda015b4e826d1ebc821[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Sat May 18 12:04:02 2024 -0500
+
+    la contidad y subtotal estan completas
+
+[33mcommit bc895d94fb8215cf29c5a4aa39509f057d41ad04[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 17 11:55:36 2024 -0500
+
+    agrege roles, y checkout
+
+[33mcommit 856955dd9d7a61d5359ffbdfe7249492da32ea96[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Thu May 9 21:28:17 2024 -0500
+
+    el admin esta en inicios
+
+[33mcommit a351512e7efc0482297cb779a0312bf29285607a[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Fri May 3 11:58:11 2024 -0500
+
+    login
+
+[33mcommit 57ca4f53c27a7fa45b2dcb44008b65bdbb78aa03[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Tue Apr 16 10:09:07 2024 -0500
+
+    Avance de los productos
+
+[33mcommit d6f4fd968ec113376c1e1ab2933f34330b59f548[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Tue Mar 12 10:02:02 2024 -0500
+
+    un nuevo home
+
+[33mcommit 8a78fe63e1032719fb03f03045196156d3f6893c[m
+Author: Angelo Poma <pomagabrielangelo@gmail.com>
+Date:   Tue Feb 27 20:00:25 2024 -0500
+
+    Agrege un nuevo archivo
