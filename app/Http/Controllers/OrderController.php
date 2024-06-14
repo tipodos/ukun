@@ -70,12 +70,10 @@ class OrderController extends Controller
     public function show($id)
     {
         $order = Order::find($id);
+        $detalle = OrderDetail::where('order_id', $id)->get();
 
-        if (!$order) {
-            return redirect()->route('orders.index')->with('error', 'Order not found.');
-        }
 
-        return view('orders.show', compact('order'));
+        return view('order/show', compact('order','detalle'));
     }
 
     /**

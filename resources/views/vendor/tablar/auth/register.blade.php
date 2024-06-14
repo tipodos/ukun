@@ -10,23 +10,23 @@
         <form class="card card-md" action="{{route('register')}}" method="post" autocomplete="off" novalidate>
             @csrf
             <div class="card-body">
-                <h2 class="card-title text-center mb-4">Create new account</h2>
+                <h2 class="card-title text-center mb-4">Crear una nueva cuenta</h2>
                 <div class="mb-3">
-                    <label class="form-label">Name</label>
+                    <label class="form-label">Nombre</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Enter name">
                     @error('name')
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Email address</label>
+                    <label class="form-label">Correo electrónico</label>
                     <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Enter email">
                     @error('email')
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Password</label>
+                    <label class="form-label">Contraseña</label>
                     <div class="input-group input-group-flat">
                         <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password"
                                autocomplete="off">
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Confirm Password</label>
+                    <label class="form-label">Confirmar Contraseña</label>
                     <div class="input-group input-group-flat">
                         <input type="password" name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" placeholder="Password"
                                autocomplete="off">
@@ -69,16 +69,16 @@
                 <div class="mb-3">
                     <label class="form-check">
                         <input type="checkbox" class="form-check-input"/>
-                        <span class="form-check-label">Agree the <a href="#" tabindex="-1">terms and policy</a>.</span>
+                        <span class="form-check-label">Acordar el <a href="#" tabindex="-1">términos y política</a>.</span>
                     </label>
                 </div>
                 <div class="form-footer">
-                    <button type="submit" class="btn btn-primary w-100">Create new account</button>
+                    <button type="submit" class="btn btn-primary w-100">Crear cuenta</button>
                 </div>
             </div>
         </form>
         <div class="text-center text-muted mt-3">
-            Already have account? <a href="{{route('login')}}" tabindex="-1">Sign in</a>
+            ¿Ya tienes cuenta? <a href="{{route('login')}}" tabindex="-1">Iniciar sesion</a>
         </div>
     </div>
 @endsection

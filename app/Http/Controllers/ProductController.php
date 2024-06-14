@@ -101,7 +101,11 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        request()->validate(Product::$rules);
+        $rules = [
+            'name' => 'required|string|max:255',
+        ];
+    
+        $request->validate($rules);
 
         $product->update($request->all());
 

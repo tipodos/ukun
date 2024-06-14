@@ -14,6 +14,12 @@
         </div>
     </div>
 </div>
+<nav>
+    <a href="{{ route('tienda') }}" class="nav-item nav-link">Todos</a>
+    @foreach($categories as $category)
+        <a href="{{ route('tienda', ['category_id' => $category->id]) }}" class="nav-item nav-link">{{ $category->nombre }}</a>
+    @endforeach
+</nav>
 <!-- Page Header End -->
 
 
@@ -72,6 +78,7 @@
 
 
         <!-- Shop Product Start -->
+        
         <div class="col-lg-9 col-md-12">
             <div class="row pb-3">
                 <!-- Aquí comienza el bucle para mostrar los productos -->

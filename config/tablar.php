@@ -164,6 +164,11 @@ return [
             'text' => 'Pedidos',
             'icon' => 'ti ti-shopping-cart',
             'url' => 'orders'
+        ],
+        [
+            'text' => 'categoria',
+            'icon' => 'ti ti-shopping-cart',
+            'url' => 'categories'
         ]
 
     ],

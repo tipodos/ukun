@@ -2,37 +2,16 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-/**
- * Class Product
- *
- * @property $id
- * @property $name
- * @property $description
- * @property $price
- * @property $image
- * @property $created_at
- * @property $updated_at
- *
- * @package App
- * @mixin \Illuminate\Database\Eloquent\Builder
- */
 class Product extends Model
 {
-    
-    static $rules = [
-    ];
+    use HasFactory;
+    protected $fillable = ['name', 'price', 'description', 'category_id'];
 
-    protected $perPage = 20;
-
-    /**
-     * Attributes that should be mass-assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['name','description','price','image'];
-
-
-
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

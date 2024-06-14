@@ -8,7 +8,10 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PayPalController;
 use App\Http\Controllers\PromotionController;
@@ -24,7 +27,7 @@ Route::get('/', [routeController::class,'inicio'])->name('inicio');
 Route::get('/tienda', [routeController::class,'tienda'])->name('tienda');
 Route::get('/contactos', [routeController::class,'contacto'])->name('contacto');
 Route::post('/checkout', [routeController::class,'checkout'])->name('checkout');
-Route::post('/detalle/{id}', [routeController::class,'detalle'])->name('detalle');
+Route::get('/detalle/{id}', [routeController::class,'detalle'])->name('detalle');
 
 Route::post('/carrito/add', [CartController::class,'addToCart'])->name('add');
 Route::post('/actualizar-cantidad', [CartController::class, 'actualizarCantidad'])->name('actualizarCantidad');
@@ -58,8 +61,8 @@ Route::get('/google-auth/redirect', function () {
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/home', function () {
-        return view('home');
+    Route::get('/user/index', function () {
+        return view('/user/index');
     })->name('dashboard');
 });
 
@@ -78,12 +81,13 @@ require __DIR__.'/auth.php';
 
 //Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
 
 Route::resource('/products', ProductController::class);
+Route::resource('/categories', CategoryController::class);
 Route::resource('/promotions', PromotionController::class);
 Route::put('/promotions/{promotion}/updateVisibility', [PromotionController::class, 'updateVisibility'])->name('promotions.updateVisibility');
 Route::get('/promotions/active', [PromotionController::class, 'getActivePromotions']);
@@ -106,6 +110,7 @@ Route::middleware('auth')->group(function () {
     Route::match(['get', 'post'], '/paypal/success', [PayPalController::class, 'paymentSuccess'])->name('paypal.success');
     Route::get('/paypal/cancel', [PayPalController::class, 'paymentCancel'])->name('paypal.cancel');
 });
+
 
 
 
