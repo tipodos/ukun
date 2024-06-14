@@ -1,6 +1,6 @@
 @extends('plantilla.cabecera')
 @section('titulo', 'Tienda')
-    
+
 @section('contenido')
 
 <!-- Page Header Start -->
@@ -14,7 +14,7 @@
         </div>
     </div>
 </div>
-<nav>
+<nav style="display: flex; justify-content:center; align-items:center ">
     <a href="{{ route('tienda') }}" class="nav-item nav-link">Todos</a>
     @foreach($categories as $category)
         <a href="{{ route('tienda', ['category_id' => $category->id]) }}" class="nav-item nav-link">{{ $category->nombre }}</a>
@@ -29,7 +29,30 @@
         <!-- Shop Sidebar Start -->
         <div class="col-lg-3 col-md-12">
             <!-- Price Start -->
-            <div class="border-bottom mb-4 pb-4">
+            <div class=" d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categorias</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Camarotes<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Camarote para hombres</a>
+                                <a href="" class="dropdown-item">Camarote para mujeres</a>
+                                <a href="" class="dropdown-item">Camarote para niños</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link ">Lamparas</a>
+                        <a href="" class="nav-item nav-link bg-primary">Roperos</a>
+                        <a href="" class="nav-item nav-link">Cosinas</a>
+                        <a href="" class="nav-item nav-link">mesas</a>
+                        <a href="" class="nav-item nav-link">lavamanos</a>
+                    </div>
+                </nav>
+            </div>
+            {{-- <div class="border-bottom mb-4 pb-4">
                 <h5 class="font-weight-semi-bold mb-4">Filter by price</h5>
                 <form>
                     <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
@@ -63,22 +86,22 @@
                         <span class="badge border font-weight-normal">168</span>
                     </div>
                 </form>
-            </div>
+            </div> --}}
             <!-- Price End -->
-            
+
             <!-- Color Start -->
-            
+
             <!-- Color End -->
 
             <!-- Size Start -->
-            
+
             <!-- Size End -->
         </div>
         <!-- Shop Sidebar End -->
 
 
         <!-- Shop Product Start -->
-        
+
         <div class="col-lg-9 col-md-12">
             <div class="row pb-3">
                 <!-- Aquí comienza el bucle para mostrar los productos -->
@@ -128,7 +151,7 @@
                 </nav>
             </div>
         </div>
-        
+
 <!-- Shop End -->
 
 
