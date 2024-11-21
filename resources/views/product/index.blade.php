@@ -86,9 +86,9 @@
                                     </th>
                                     
 										<th>Nombre</th>
-										<th>Descripción</th>
 										<th>Precio</th>
 										<th>Imagen</th>
+                                        <th>Categoria</th>
 
                                     <th class="w-1"></th>
                                 </tr>
@@ -102,9 +102,9 @@
                                         <td>{{ ++$i }}</td>
                                         
 											<td>{{ $product->name }}</td>
-											<td>{{ $product->description }}</td>
 											<td>{{ $product->price }}</td>
 											<td><img src="{{asset('img/'.$product->image )}} " alt="" width="70px"></td>
+                                            <td>{{ $product->category->nombre }}</td>
 
                                         <td>
                                             <div class="btn-list flex-nowrap">

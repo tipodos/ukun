@@ -21,7 +21,9 @@ class CartController extends Controller
 
         );
 
-        return redirect()->back()->with("success", "Producto agregado " . $producto->name);
+        session()->flash('success','El producto fue agregado al carrito correctamente');
+
+        return redirect()->back();
     }
     public function actualizarCantidad(Request $request)
     {

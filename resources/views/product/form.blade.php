@@ -1,3 +1,5 @@
+<form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
+    @csrf
 
 <div class="form-group mb-3">
     <label class="form-label">   {{ Form::label('nombre') }}</label>
@@ -35,6 +37,13 @@
         <img id="imagePreview" src="#" alt="your image" style="display: none; max-width: 200px; margin-top: 10px;" />
     </div>
 </div>
+<div class="form-group mb-3">
+    <label class="form-label">{{ Form::label('category_id', 'Category') }}</label>
+    <div>
+        {{ Form::select('category_id', $categories, $product->category_id, ['class' => 'form-control' . ($errors->has('category_id') ? ' is-invalid' : ''), 'placeholder' => 'Select Category']) }}
+        {!! $errors->first('category_id', '<div class="invalid-feedback">:message</div>') !!}
+    </div>
+</div>
     <div class="form-footer">
         <div class="text-end">
             <div class="d-flex">
@@ -43,6 +52,7 @@
             </div>
         </div>
     </div>
+</form>
     <script>
         function previewImage(event) {
             var reader = new FileReader();

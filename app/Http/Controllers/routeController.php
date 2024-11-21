@@ -4,16 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
-use App\Models\Producto;
-use App\Models\ImgProducto;
 USE App\Models\Product;
-
-
+use App\Models\Promotion;
 
 class routeController extends Controller
 {
     public function inicio(){
-        return view('inicio');
+        $promotions = Promotion::where('view', 1)->get();
+        return view('inicio',compact('promotions'));
     }
     public function tienda(Request $request){
         $categories = Category::all();
