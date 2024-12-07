@@ -43,19 +43,19 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-dark px-2" href="">
+                        <a class="text-dark px-2" href="https://www.facebook.com/people/UKUN/100092439151015/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-dark px-2" href="">
+                        <a class="text-dark px-2" href="https://www.tiktok.com/@estudio.ukun">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a class="text-dark px-2" href="">
+                        <a class="text-dark px-2" href="https://www.tiktok.com/@estudio.ukun">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a class="text-dark px-2" href="">
+                        <a class="text-dark px-2" href="https://www.instagram.com/estudioukun/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-dark pl-2" href="">
+                        <a class="text-dark pl-2" href="https://www.tiktok.com/@estudio.ukun">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -64,7 +64,7 @@
             <div class="row align-items-center py-3 px-xl-5">
                 <div class="col-lg-3 d-none d-lg-block">
                     <a href="" class="text-decoration-none">
-                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">UKUN </span>tienda</h1>
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRnAVJD6bmXgdN6S5jZwlGId9NT522Vc6ixQ&s" style="width: 80px; height: auto;"> </span>tienda</h1>
                     </a>
                 </div>
                 <div class="col-lg-6 col-6 text-left">

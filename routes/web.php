@@ -75,6 +75,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('/users', UserController::class);
+    Route::resource('/orders', OrderController::class);
+    Route::resource('/products', ProductController::class);
+    Route::resource('/categories', CategoryController::class);
+    Route::resource('/promotions', PromotionController::class);
+    Route::put('/promotions/{promotion}/updateVisibility', [PromotionController::class, 'updateVisibility'])->name('promotions.updateVisibility');
+    Route::get('/promotions/active', [PromotionController::class, 'getActivePromotions']);
 });
 
 require __DIR__.'/auth.php';
@@ -86,16 +93,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Auth::routes();
 
 
-Route::resource('/products', ProductController::class);
-Route::resource('/categories', CategoryController::class);
-Route::resource('/promotions', PromotionController::class);
-Route::put('/promotions/{promotion}/updateVisibility', [PromotionController::class, 'updateVisibility'])->name('promotions.updateVisibility');
-Route::get('/promotions/active', [PromotionController::class, 'getActivePromotions']);
-
-
-
-Route::resource('/users', UserController::class);
-Route::resource('/orders', OrderController::class);
 
 
 Route::get('/order/export', [OrderController::class, 'export'])->name('export');
@@ -105,11 +102,9 @@ Route::get('/order/export', [OrderController::class, 'export'])->name('export');
 //Route::get('/paypal-cancel', [CheckoutController::class, 'cancel'])->name('cancel');
 
 //Route::get('/checkout', [PayPalController::class, 'showCheckoutForm'])->name('checkout');
-Route::middleware('auth')->group(function () {
-    Route::post('/paypal/create-order', [PayPalController::class, 'createOrder'])->name('paypal.createOrder');
-    Route::match(['get', 'post'], '/paypal/success', [PayPalController::class, 'paymentSuccess'])->name('paypal.success');
-    Route::get('/paypal/cancel', [PayPalController::class, 'paymentCancel'])->name('paypal.cancel');
-});
+Route::post('/paypal/create-order', [PayPalController::class, 'createOrder'])->name('paypal.createOrder');
+Route::match(['get', 'post'], '/paypal/success', [PayPalController::class, 'paymentSuccess'])->name('paypal.success');
+Route::get('/paypal/cancel', [PayPalController::class, 'paymentCancel'])->name('paypal.cancel');
 
 
 

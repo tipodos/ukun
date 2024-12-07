@@ -39,7 +39,7 @@
         <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
             <div class="btn btn-dark" style="width: 45px; height: 45px;">
                 <span class="carousel-control-prev-icon mb-n2"></span>
-            </div>
+            </div>  
         </a>
         <a class="carousel-control-next" href="#header-carousel" data-slide="next">
             <div class="btn btn-dark" style="width: 45px; height: 45px;">
@@ -96,8 +96,8 @@
                 <div class="col-lg-7">
                     <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Nosotros</h6>
                     <h1 class="display-4 mb-3"><span class="text-primary">Más de 25 años de experiencia</span> diseño y armado de muebles</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia voluptatibus quisquam sint pariatur quidem unde earum rerum, nam nostrum? Praesentium veritatis commodi fugiat aut vitae sunt vel nam quis!</p>
-                    
+                    <p>En UKUN, somos apasionados por el diseño y la calidad. Nuestra misión es transformar tus espacios en lugares llenos de estilo, comodidad y funcionalidad. Con años de experiencia en el sector del mobiliario, ofrecemos una amplia variedad de muebles que se adaptan a tus necesidades y gustos, desde diseños modernos hasta estilos clásicos.</p>
+                    <p>Más que una tienda, somos tus aliados en la creación de espacios únicos y memorables. ¡Te invitamos a descubrir lo mejor del diseño en muebles con nosotros!</p>
                 </div>
             </div>
         </div>
@@ -165,7 +165,25 @@
             </div>
         </div>
     </div>
-
+    <div class="design-service" style="position: relative; text-align: center; width: 100%; max-width: 800px; margin: 0 auto;">
+        <!-- Imagen de fondo -->
+        <img src="https://imcesa.com.pe/wp-content/uploads/2022/11/mueble-de-portada.webp" alt="Diseño a medida" style="width: 100%; border-radius: 10px;">
+        
+        <!-- Texto superpuesto -->
+        <div class="overlay-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">
+            <h2 style="margin: 0; font-size: 2rem;">¡Diseños a medida para tu hogar!</h2>
+            <p style="margin: 10px 0; font-size: 1.2rem;">Llevamos nuestras ideas y experiencia directamente a tu casa para que reflejes tu estilo.</p>
+            <p style="margin: 10px 0; font-size: 1.5rem; font-weight: bold;">
+                Contáctanos al 
+                <a href="https://wa.me/929066348" target="_blank" style="color: #ffdd57; text-decoration: none;">WhatsApp</a>
+            </p>
+            <button style="padding: 10px 20px; background-color: #057c15; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                <a href="https://wa.me/929066348" target="_blank" style="text-decoration: none; color: white;">Escribenos ahora</a>
+            </button>
+        </div>
+    </div>
+    
+    
     <!-- comienza galeria -->
     <div class="container-fluid bg-gallery" id="carouselExample" style="padding: 50px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px; font-family: Roboto, sans-serif">
@@ -206,75 +224,34 @@
         </div>
     </div>
     <!-- Termina galeria -->
-
-    <!-- Categories Start -->
-    <div class="container-fluid pt-5">
-        <div class="row px-xl-5 pb-3">
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
-                    <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid"
-                            src="https://yolodecoro.pe/wp-content/uploads/2021/01/sofa-cama-para-sala.jpg" height="200">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Camas</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
-                    <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid"
-                            src="https://planner5d.com/blog/content/images/2022/06/sidekix-media-iu4K1XPnNAY-unsplash.jpg"
-                            alt="">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Juegos de sala</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pb-1">
-                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
-                    <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" 
-                            src="https://content.elmueble.com/medio/2024/04/08/lamparas-que-anaden-mucho-estilo-a-la-decoracion_276e50a7_00580740_240408173521_900x900.jpg" 
-                            style="height: 340px;" width="">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Iluminacion</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Categories End -->
-
-    
     <!-- Vendor Start -->
     <div class="container-fluid py-5">
         <div class="row px-xl-5">
             <div class="col">
                 <div class="owl-carousel vendor-carousel">
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-1.jpg') }}" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZu8jc4RqbdZ0d_wv_XAtn268IRq7md8Q-w&s" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-2.jpg') }}" alt="">
+                        <img src="https://yt3.googleusercontent.com/J-PMpwqHAjBSbKf3Qp1sg_P6N40gUMBQ1y6UjIcsIEuPJ8OBdULjGNpR93PxcGJhRyXjCBzYQA=s900-c-k-c0x00ffffff-no-rj" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-3.jpg') }}" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCRnbwhsXPELNXHl-gKTaKfCKaCaC2BdYz--4elUnmM4wHZOBw4snemssGX8IcmYawn0&usqp=CAU" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-4.jpg') }}" alt="">
+                        <img src="https://pbs.twimg.com/profile_images/693224659735588865/kQbvYlLl_400x400.png" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-5.jpg') }}" alt="">
+                        <img src="https://marketplace.canva.com/EADh-KnSbvY/2/0/1600w/canva-logotipo-mobiliario-para-el-hogar-sencillo-en-blanco-bgC_OqgG-7k.jpg" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-6.jpg') }}" alt="">
+                        <img src="https://yt3.googleusercontent.com/uNRDp3CSBw4RjFP6F_Wbh9vRBCzbdn8TwRS3YlGkoQvS-aTSmLwZ3kxHtrCRXosr4dFZ8POcZA=s900-c-k-c0x00ffffff-no-rj" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-7.jpg') }}" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPiAuRE_5xEo33-DevOVV9cuaB1RbAlAbshA&s" alt="">
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="{{ asset('img/vendor-8.jpg') }}" alt="">
+                        <img src="https://yt3.googleusercontent.com/cnvy7MbHVaYwHjI0mdL-Btdh3_57H_16d3CLZcN7_o3jOfuyH_B2qQLwu6jjIUUoJ5R3614WJQ=s900-c-k-c0x00ffffff-no-rj" alt="">
                     </div>
                 </div>
             </div>

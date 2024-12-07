@@ -63,9 +63,9 @@ class UserController extends Controller
     ]);
 
     if ($user->activo) {
-        return redirect()->route('user')->with('success', 'Administrador creado exitosamente.');
+        return redirect()->route('users.index')->with('success', 'Administrador creado exitosamente.');
     } else {
-        return redirect()->route('user')->with('success', 'Usuario creado exitosamente.');
+        return redirect()->route('users.index')->with('success', 'Usuario creado exitosamente.');
     }
 }
 
